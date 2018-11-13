@@ -1,3 +1,47 @@
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+  font-family: cursive;
+ }
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: footer;
+  font-family: cursive;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: lightpink;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+ul {
+  font-size: 15px;
+}
+
+
 h1 {
   color: blue;
   font-family: cursive;
@@ -6,21 +50,22 @@ h1 {
 }
 
 h2 {
-  color: cream;
+  color: black;
   font-family: cursive;
-  font-size: 200%;
+  font-size: 100%;
   text-align: center;
+  padding-top: 20px;
 }
 
   h3 {
   color: purple;
   font-family: cursive;
-  font-size: 100%;
+  font-size: 75%;
   text-align: center;
 }
 
 .center {
-    padding-top: 35px;
+    padding-top: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
